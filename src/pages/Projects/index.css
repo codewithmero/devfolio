@@ -1,0 +1,33 @@
+.project-section {
+  /* background: #F7F7F7; */
+  
+  padding: 1rem;
+  margin-right: 1rem;
+  border: 0.5px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.project-seciton > h4 {
+  cursor: pointer;
+}
+
+.project-section:last-child {
+  margin-right: 0;
+}
+
+/* MEDIA QUERY */
+/* PROJECTS */
+@media screen and (max-width: 992px) {
+  .row > .project-section {
+      flex: 0 0 auto;
+      width: 45%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .row > .project-section {
+      flex: 0 0 auto;
+      width: 97%;
+  }
+}
