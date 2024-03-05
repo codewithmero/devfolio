@@ -6,11 +6,7 @@ import Footer from './components/Footer';
 
 function App(props) {
   return (
-    <div className="container">
-      <Header />
-        <Main />
-      <Footer />
-    </div>
+    <Main />
   );
 }
 

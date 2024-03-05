@@ -8,25 +8,26 @@ import { SiMongodb, SiSocketdotio, SiMaterialdesign, SiGoogleanalytics } from "r
 import { BiLogoPostgresql } from "react-icons/bi";
 import { TbBrandNextjs } from "react-icons/tb";
 import { IoLogoCss3 } from "react-icons/io";
+import Experience from '../Experience/Experience';
+import Projects from '../Projects/Projects';
 
 import "./index.css";
 import "./logocolor.css";
-import Experience from '../Experience/Experience';
-import Projects from '../Projects/Projects';
+import "./hero.css";
 
 function Main(props) {
   return (
     <>
       <Row className="hero-section">
         <Col className="text-content">
-          <h2>Hey! I am Rudra</h2>
+          <h2>Hello! I am Rudra</h2>
           <p>A freelance <strong>fullstack developer</strong> based in India.</p>
           <p>Turning <strong>startup ideas</strong> into <strong>reality.</strong></p>
         </Col>
       </Row>
 
       {/* EXPERTISE SECTION */}
-      <Row className="mb-5 expertise">
+      <Row className="mb-5 expertise" id="expertise">
         <h3 className="section-title">Expertise</h3>
         <Col className="expertise-column">
           <HiOutlineDesktopComputer className="icon" />
@@ -61,7 +62,7 @@ function Main(props) {
       </Row>
 
       {/* TOOLS SECTION */}
-      <Row className="tools">
+      <Row className="tools" id="tools">
         <h2 className="section-title">Tools</h2>
         <Col className="tools-column">
           <GrReactjs className="icon react" />

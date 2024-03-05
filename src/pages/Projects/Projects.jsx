@@ -6,7 +6,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 function Projects(props) {
   return (
     <>
-      <Row className="projects">
+      <Row className="projects" id="projects">
         <h3 className="section-title">Projects</h3>
         <Col className="project-section">
           <h4>yosharts</h4>
@@ -42,9 +42,15 @@ function Projects(props) {
           <p>A whatsapp like chat platform that employs <br />many of its functionalities along with <br />concurrent video sharing.</p>
           <a href="#"  className="project-link">view in github <FaExternalLinkAlt className="link-ico"/></a>
         </Col>
-        <Col>
+        <Col className="project-section">
+          <h4>devfolio</h4>
+          <p>A digital portfolio website to that consists of my skills, <br />projects and contact information for the ease of showcase.</p>
+          <a href="https://github.com/codewithmero/devfolio" target="_blank" rel="noreferrer" className="project-link">view in github <FaExternalLinkAlt className="link-ico"/></a>
         </Col>
-        <Col>
+        <Col className="project-section">
+          <h4>digilib</h4>
+          <p>A digital library to host soft copies of the <br />books {`I'd like to read and share with others. A person can read online as well as download the books.`}</p>
+          <a href="https://github.com/codewithmero/devfolio" target="_blank" rel="noreferrer" className="project-link">view in github <FaExternalLinkAlt className="link-ico"/></a>
         </Col>
       </Row>
     </>
